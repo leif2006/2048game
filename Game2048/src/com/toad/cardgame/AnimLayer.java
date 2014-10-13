@@ -1,4 +1,4 @@
-package com.chijia.game2048;
+package com.toad.cardgame;
 
 import java.util.ArrayList;
 import java.util.List;

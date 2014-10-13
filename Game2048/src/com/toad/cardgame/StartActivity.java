@@ -1,4 +1,4 @@
-package com.chijia.game2048;
+package com.toad.cardgame;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-public class SplashActivity extends Activity {
+public class StartActivity extends Activity {
     private Button startButton;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class SplashActivity extends Activity {
 			
 			@Override
 			public void onClick(View view) {
-				Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+				Intent intent = new Intent(StartActivity.this, MainActivity.class);
 				startActivity(intent);
 				finish();
 			}

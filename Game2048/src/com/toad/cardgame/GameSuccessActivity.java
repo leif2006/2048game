@@ -1,4 +1,4 @@
-package com.chijia.game2048;
+package com.toad.cardgame;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -16,7 +16,7 @@ public class GameSuccessActivity extends Activity {
 		setContentView(R.layout.gamesuccess);
 		int score = getIntent().getIntExtra("score", 0);
 		tvFinalScore = (TextView) findViewById(R.id.tvFinalScore);
-		tvFinalScore.setText(Config.FINAL_SCORE_PRE + score);
+		tvFinalScore.setText(this.getResources().getString(R.string.final_score) + score);
 		btnRestart = (Button) findViewById(R.id.btnRestart);
 		btnRestart.setOnClickListener(new OnClickListener() {
 			

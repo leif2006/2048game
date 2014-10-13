@@ -1,4 +1,4 @@
-package com.chijia.game2048;
+package com.toad.cardgame;
 
 import android.content.Context;
 import android.view.Gravity;

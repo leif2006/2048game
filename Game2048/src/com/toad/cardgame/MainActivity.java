@@ -1,4 +1,4 @@
-package com.chijia.game2048;
+package com.toad.cardgame;
 
 
 
@@ -76,7 +76,7 @@ public class MainActivity extends Activity {
 	}
 
 	public void showScore() {
-		tvScore.setText(Config.SCORE_PRE + score);
+		tvScore.setText(this.getString(R.string.score) + score);
 	}
 	
 	public void addScore(int s) {
@@ -88,7 +88,7 @@ public class MainActivity extends Activity {
 	}
 
 	public void showBestScore(int maxScore) {
-		tvBestScore.setText(Config.BEST_SCORE_PRE + maxScore);
+		tvBestScore.setText(this.getResources().getString(R.string.bestscore) + maxScore);
 	}
 
 	private void saveBestScore(int maxScore) {
